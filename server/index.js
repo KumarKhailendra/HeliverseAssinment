@@ -11,7 +11,7 @@ dotenv.config();
 connectDB();
 
 const corsOptions = {
-  origin: "https://chat-app-ten-mu-62.vercel.app",
+  origin: "https://heliverse-assinment.vercel.app",
   methods: ["POST", "GET"],
   Credentials: true,
   optionSuccessStatus:200
