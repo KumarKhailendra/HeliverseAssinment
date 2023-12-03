@@ -12,7 +12,7 @@ connectDB();
 
 const corsOptions = {
   origin: "https://heliverse-assinment.vercel.app",
-  methods: ["POST", "GET"],
+  methods: ["POST", "GET", "PUT", "PATCH", "DELETE"],
   Credentials: true,
   optionSuccessStatus:200
 }
