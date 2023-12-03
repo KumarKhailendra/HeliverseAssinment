@@ -17,7 +17,7 @@ function* onGetUsers(action) {
   yield put(getUsersStart());
 
   try {
-    const response = yield axios.get("/api/users", {
+    const response = yield axios.get("https://heliverseassinment.onrender.com/api/users", {
       params: {
         page: payload.page,
         limit: payload.limit,
@@ -40,7 +40,7 @@ function* onPostUsers() {
   yield put(postUsersStart());
 
   try {
-    const response = yield axios.post("/api/users");
+    const response = yield axios.post("https://heliverseassinment.onrender.com/api/users");
 
 
     yield put(postUsersSuccess(response?.data?.data || "succesfully done"));
