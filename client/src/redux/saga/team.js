@@ -7,7 +7,7 @@ function* onGetTeamsMember(action) {
   const { payload } = action;
 
   try {
-    const response = yield axios.get(`/api/team/${payload}`);
+    const response = yield axios.get(`https://heliverseassinment.onrender.com/api/team/${payload}`);
 
 
     yield put(getTeamMemberSuccess(response?.data?.data));
@@ -21,7 +21,7 @@ function* onGetTeams(action) {
   const { payload } = action;
 
   try {
-    const response = yield axios.get("/api/team", {
+    const response = yield axios.get("https://heliverseassinment.onrender.com/api/team", {
       params: {
         page: payload
       },
@@ -41,7 +41,7 @@ function* onPostTeams(action) {
 
   try {
     
-    const response = yield axios.post("/api/team", {
+    const response = yield axios.post("https://heliverseassinment.onrender.com/api/team", {
         teamname: payload.teamname,
         Description: payload.Description,
         members: payload.members
