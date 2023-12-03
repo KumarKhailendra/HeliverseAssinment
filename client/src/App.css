@@ -1,0 +1,153 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-contant{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 30px;
+}
+
+.card{
+  position: relative;
+  background-color: #fff;
+  max-width: 325px;
+  width: 325px;
+  height: auto;
+  margin: 25px;
+  box-shadow: 0 5px 25px rgb(1 1 1/20%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-image{
+  max-height: 200px;
+}
+
+.card-image img{
+  max-width: 100%;
+  height: auto;
+}
+
+.card-info{
+  position: relative;
+  color: #222;
+  padding: 10px 20px 20px;
+}
+
+.card-info h3{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.card-info p{
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.search-bar{
+  display: flex;
+  position: sticky;
+  top:70px;
+  width: 100%;
+  background-color: azure;
+  border: 1px solid #ccc;
+  flex-direction: row-reverse;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+.pagination{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ---------------------------------------- */
+
+.button-37 {
+  background-color: #13aa52;
+  border: 1px solid #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  outline: 0;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-37:hover {
+  box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+  transform: translateY(-2px);
+}
+
+
+
+@media (min-width: 768px) {
+  .button-37 {
+    padding: 10px 30px;
+  }
+}
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 14px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
